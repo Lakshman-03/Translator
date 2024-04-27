@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"  href="logo1.png" >
+</head>
+<body>
+    <div class="container"><audio src="sakura-140432.mp3" autoplay loop></audio>
+        <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Translator</h2>
+        <form action="/translate" method="post">
+            
+            <label for="text" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Text : <input type="text" name="text" placeholder="Enter text " maxlength="500" multiple></label>
+            <br>
+            <button type="submit">click me </button>
+            <div class = result>
+                <% if (test == '') { %>
+                    <p></p>
+                <% } else{%>
+                  <h4><%= test  %></h4>  
+                <% } %>
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
